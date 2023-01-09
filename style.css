@@ -8,6 +8,7 @@
     box-shadow: border-box;
 }
 
+
 /* Estilo general de la página */
 body {
     margin: 0;
@@ -26,67 +27,65 @@ header {
 }
 
 /* Título y subtítulo del encabezado */
-/* header h1,
-header p {
-    margin: 0;
-} */
-
 
 span {
     color: #b889e4;
+    font-size: 1.2em;
 }
 
 .home-section {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
     padding: 20px;
-    }
-    
-    .home-section-text {
+}
+
+.home-section-text {
     text-align: center;
-    }
-    
-    .home-section-text h1 {
+}
+
+.home-section-text h1 {
     padding-top: 50px;
-    /* font-size: 36px;
-    color: #333; */
     margin: 0;
     color: #fefefe;
     font-family: monospace;
     font-size: 4em;
-    font-weight:bold;
-    }
-    
-    .home-section-text p {
-    padding-top: 20px 20px;
+    font-weight: bold;
+}
+
+.home-section-text p {
+    padding: 20px 25px;
     font-size: 18px;
-    color: #666;
+    color: rgb(219, 213, 213);
     margin: 10px 0 20px;
-    }
-    
-    .home-section-text .button {
+    line-height: 1.2;
+}
+
+.home-section-text .button-cta {
     display: inline-block;
-    font-size: 14px;
+    font-size: 1rem;
+    font-family: monospace;
     text-decoration: none;
-    color: #fff;
-    background-color: #333;
-    padding: 10px 20px;
+    color: rgb(31, 31, 32);
+    background-color: #8a59b8;
+    padding: 14px 25px;
     border-radius: 5px;
-    }
-    
-    .home-section-image {
+    box-shadow: 0 0 0px #8a59b8, 0 0 0px #fff, 0 0 8px #8a59b8, 0 0 20px #8a59b8;
+}
+
+.home-section-image {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    }
-    
-    .home-section-image img {
+    /* filter: grayscale(100%); */
+}
+
+.home-section-image img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    }
+}
 
 /* Menú de navegación */
 
@@ -103,7 +102,7 @@ span {
     z-index: 100;
     cursor: pointer;
     display: block;
-    width: 30px;
+    width: 25px;
     height: 32px;
 }
 
@@ -119,10 +118,12 @@ span {
 nav {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 40%;
     bottom: 0;
     right: 0;
-    background-color: #333;
+    background-color: rgb(49, 46, 46);
+    height: 50%;
+    border-radius: 20px;
     z-index: 50;
     transform: translateX(100%);
     transition: transform 0.3s ease;
@@ -136,7 +137,6 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -144,12 +144,12 @@ nav ul {
 }
 
 nav ul li {
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 nav ul li a {
     font-size: 24px;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(248, 232, 232, 0.5);
     text-decoration: none;
 }
 
@@ -162,25 +162,103 @@ main {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 /* Estilo de las secciones de la página */
 section {
-    background-color: #fff;
     color: #333;
-    padding: 20px;
-    width: 45%;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0px;
+    margin: 0px;
+    margin: 0;
+    left: 0;
+    right: 0;
+
 }
 
 section h2 {
     margin: 0;
-    font-size: 24px;
+    font-size: 3rem;
+}
+
+
+/* Estilos para la sección de Servicios*/
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fefefe;
+    padding-bottom: 60px;
+    align-items: center;
+}
+
+.card-container h2 {
+    margin-top: 50px; 
+}
+
+.card-container p{
+    margin: 30px;
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    width: 50%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.card-description {
+    font-size: 14px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* Estilos para la sección Sobre mi*/
+
+/* .about-me{
+
+} */
+
+.work-section {
+    text-decoration: none;
+}
+
+
+/* Estilos para la sección "Sobre mí" */
+section#Sobre-mi {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* Estilo del formulario de contacto */
+
+/* 
+.contact-section {
+    width: 45%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 form {
     width: 80%;
     margin: 0 auto;
@@ -203,7 +281,7 @@ form textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-}
+}   */
 
 /* Pie de página */
 footer {
@@ -217,19 +295,11 @@ footer {
     line-height: 1.5;
 }
 
-.social-media a{
+.social-media a {
     text-decoration: none;
 }
 
 .social-media img {
     margin-bottom: 20px;
     margin-bottom: 0;
-    }
-
-
-
-
-
-
-
-
+}

@@ -24,6 +24,7 @@
                 <span class="menu-button-line"></span>
                 <span class="menu-button-line"></span>
                 <span class="menu-button-line"></span>
+                <span class="menu-button-line"></span>
             </a>
         </div>
 
@@ -33,29 +34,29 @@
                 <li class="list__item">
                     <div class="list__button">
                         <img src="/assets/home.svg" alt="home" class="list__img">
-                        <a href="#Inicio" class="nav__link">Inicio</a>
+                        <a href="#home" class="nav__link">Inicio</a>
                     </div>
                 </li>
 
                 <li class="list__item list__item--click">
                     <div class="list__button list__button--click">
-                        <img src="/assets/file.svg" alt="home" class="list__img">
-                        <a href="#Servicios" class="nav__link">Servicios</a>
+                        <img src="/assets/file.svg" alt="services" class="list__img">
+                        <a href="#services" class="nav__link">Servicios</a>
                     </div>
 
                 </li>
 
                 <li class="list__item">
                     <div class="list__button">
-                        <img src="/assets/user.svg" alt="home" class="list__img">
-                        <a href="#Sobre-mí" class="nav__link">Sobre mí</a>
+                        <img src="/assets/user.svg" alt="about-me" class="list__img">
+                        <a href="#about-me" class="nav__link">Sobre mí</a>
                     </div>
                 </li>
 
                 <li class="list__item">
                     <div class="list__button">
-                        <img src="/assets/contact.svg" alt="home" class="list__img">
-                        <a href="#Contacto" class="nav__link">Contacto</a>
+                        <img src="/assets/contact.svg" alt="#contact" class="list__img">
+                        <a href="#contact" class="nav__link">Contacto</a>
                     </div>
                 </li>
             </ul>
@@ -63,63 +64,101 @@
 
     </header>
 
-    <article class="home-section">
+    <article id="#home" class="home-section">
         <div class="home-section-text">
-            <h1>Diseño Web y Marketing <span>.</span> </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor
-                vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-            <a href="#" class="button">Llamada a la acción</a>
+            <h1>Diseño web y desarrollo<span>.</span> </h1>
+            <p>¿Quieres saber más sobre cómo puedo ayudarte a llevar tu negocio o idea
+                al siguiente nivel? Echa un vistazo a mi curriculum y No dudes en escribirme.</p>
+            <a href="#" class="button-cta">Descargar CV</a>
         </div>
 
-    <div class="home-section-image">
-        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjrDZ8yS4V5e9j0by7ZfPY-rGYKFb71BE67rLKOCR-4h0eXP5aG-x2I9uEC2bjSEbalruPWqL9yIXZIHkOMdP9090lN0uJmN_ZeraI4ljnDz5EwHYJXndDGkqUTjNUDJtoF2G75a-jHjyuaJ5dlN7GmLUnILFQNkr3QwQ5kzJKNQJefswZTkQSibpmx=w397-h400" alt="Imagen de bienvenida">
-    </div>
+        <div class="home-section-image">
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjrDZ8yS4V5e9j0by7ZfPY-rGYKFb71BE67rLKOCR-4h0eXP5aG-x2I9uEC2bjSEbalruPWqL9yIXZIHkOMdP9090lN0uJmN_ZeraI4ljnDz5EwHYJXndDGkqUTjNUDJtoF2G75a-jHjyuaJ5dlN7GmLUnILFQNkr3QwQ5kzJKNQJefswZTkQSibpmx=w397-h400"
+                alt="Imagen de bienvenida">
+        </div>
     </article>
 
     <main>
-        <section id="#Inicio">
-            <h2>Inicio</h2>
-            <p>Aquí va una breve descripción sobre ti y tu experiencia en tu campo de trabajo.</p>
+
+        <section id="services" class="services__section">
+
+                <div class="card-container">
+                        <h2>Servicios</h2>
+                        <p>Servicios profesionales de diseño de sitios web para pequeñas y grandes empresas.</p>
+
+                    <div class="card">
+                        <img class="card-icon" src="/assets/laptop.svg" alt="Imagen de bienvenida">
+                        <h3 class="card-title">Diseño de sitios web</h3>
+                        <p class="card-description"> Servicios de diseño de sitios web personalizados y
+                            responsive que se adaptan a cualquier dispositivo.</p>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-icon" src="/assets/file2.svg" alt="Imagen de bienvenida">
+                        <h3 class="card-title">Maquetado web</h3>
+                        <p class="card-description">Nuestros servicios de maquetado web de primera clase aseguran que tu
+                            sitio sea fácil de usar y navegar.</p>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-icon" src="/assets/wordl.svg" alt="Imagen de bienvenida">
+                        <h3 class="card-title">Optimización SEO</h3>
+                        <p class="card-description">Mejoramos la visibilidad de tu sitio en los motores de búsqueda para
+                            atraer más tráfico y clientes potenciales.</p>
+                    </div>
+            </div>
         </section>
-        <section id="#Sobre-mi">
-            <h2>Sobre mí</h2>
-            <p>Aquí va una breve descripción sobre ti y tu experiencia en tu campo de trabajo.</p>
+
+
+        <section id="about-me" class="services__about-me ">
+            <div class="services__container">
+                <h2>Sobre mí</h2>
+                <p>Aquí va una breve descripción sobre ti y tu experiencia en tu campo de trabajo.</p>
+            </div>
         </section>
-        <section id="#Trabajos">
-            <h2>Trabajos</h2>
-            <ul>
-                <li>
-                    <h3>Nombre del trabajo</h3>
-                    <p>Breve descripción del trabajo</p>
-                    <!-- <img src="#" alt="Imagen del trabajo"> -->
-                </li>
-                <li>
-                    <h3>Nombre del trabajo</h3>
-                    <p>Breve descripción del trabajo</p>
-                    <!-- <img src="#" alt="Imagen del trabajo"> -->
-                </li>
-                <li>
-                    <h3>Nombre del trabajo</h3>
-                    <p>Breve descripción del trabajo</p>
-                    <!-- <img src="#" alt="Imagen del trabajo"> -->
-                </li>
-            </ul>
+
+
+        <section id="work" class="work__section">
+            <div class="work__container">
+                <h2>Trabajos</h2>
+                <ul>
+                    <li>
+                        <h3>Nombre del trabajo</h3>
+                        <p>Breve descripción del trabajo</p>
+                        <!-- <img src="#" alt="Imagen del trabajo"> -->
+                    </li>
+                    <li>
+                        <h3>Nombre del trabajo</h3>
+                        <p>Breve descripción del trabajo</p>
+                        <!-- <img src="#" alt="Imagen del trabajo"> -->
+                    </li>
+                    <li>
+                        <h3>Nombre del trabajo</h3>
+                        <p>Breve descripción del trabajo</p>
+                        <!-- <img src="#" alt="Imagen del trabajo"> -->
+                    </li>
+                </ul>
         </section>
-        <section id="#Contacto">
-            <h2>Contacto</h2>
-            <p>Si quieres ponerte en contacto conmigo, puedes utilizar mi correo electrónico <a
-                    href="mailto:mi@correo.com">mi@correo.com</a> o utilizar el siguiente formulario de contacto:</p>
-            <form>
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre"><br>
-                <label for="correo">Correo electrónico:</label><br>
-                <input type="email" id="correo" name="correo"><br>
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje"></textarea><br>
-                <input type="submit" value="Enviar">
-            </form>
+
+        <section id="contact" class="contact__section">
+            <div class="contact__container">
+                <h2>Contacto</h2>
+                <p>Si quieres ponerte en contacto conmigo, puedes utilizar mi correo electrónico <a
+                        href="mailto:mi@correo.com">mi@correo.com</a> o utilizar el siguiente formulario de contacto:
+                </p>
+                <form>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre"><br>
+                    <label for="correo">Correo electrónico:</label><br>
+                    <input type="email" id="correo" name="correo"><br>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje"></textarea><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
         </section>
     </main>
+
     <footer>
         <div class="social-media">
 
